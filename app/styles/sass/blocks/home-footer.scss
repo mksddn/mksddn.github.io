@@ -1,0 +1,31 @@
+.home-footer {
+  height: 715px;
+  position: relative;
+  background-image: url('../../../images/dist/ribbon.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media (max-width: 576px) {
+    height: 560px;
+    background-size: contain;
+    background-position: 100% 100%;
+  }
+
+  &__cat {
+    position: absolute;
+    bottom: -30px;
+    right: 60%;
+
+    @media (max-width: 576px) {
+      width: 100px;
+      bottom: -15px;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 60vw;
+  }
+}

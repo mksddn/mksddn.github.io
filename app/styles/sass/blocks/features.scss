@@ -1,0 +1,27 @@
+.features {
+
+  &__title {
+    font-size: 48px;
+  }
+
+  &__wrapper {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+  }
+
+  &__item {
+    width: 220px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+    img {
+      height: 120px;
+      object-fit: contain;
+      margin-bottom: 20px;
+    }
+  }
+}

@@ -1,0 +1,73 @@
+.site-footer {
+
+  &__main {
+    background-color: $accent;
+    padding: 64px 0;
+  }
+
+  &__container {
+    // display: flex;
+    // gap: 64px;
+    // justify-content: space-between;
+    display: grid;
+    // grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+    grid-template-rows: auto;
+    gap: 64px;
+    justify-items: center;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    .logo-text {
+      font-size: 48px;
+    }
+  }
+
+  &__contacts {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+
+    &__icons {
+      margin-top: 20px;
+
+      img {
+        transition: filter $transition;
+
+        &:hover {
+          filter: brightness(0) invert(1);
+          transition: filter $transition;
+        }
+      }
+    }
+  }
+
+  &__navmenu {
+    &__title {
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    a {
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+
+  &__copyright {
+    background-color: #000;
+    color: #fff;
+    font-size: 14px;
+
+    &__wrapper {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+}

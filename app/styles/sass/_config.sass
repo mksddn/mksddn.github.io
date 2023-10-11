@@ -1,0 +1,21 @@
+@import 'reboot'
+
+@mixin font($fname, $fstyle, $fweight, $furl)
+	@font-face
+		font-family: $fname
+		font-style: $fstyle
+		font-weight: $fweight
+		src: url($furl) format('woff2')
+
+@include font('inter-iskra', normal, 400, '../fonts/Inter-Regular.woff2')
+@include font('inter-iskra', italic, 400, '../fonts/Inter-Italic.woff2')
+@include font('inter-iskra', normal, 700, '../fonts/Inter-Bold.woff2')
+@include font('inter-iskra', italic, 700, '../fonts/Inter-BoldItalic.woff2')
+@include font('inter-iskra', normal, 800, '../fonts/Inter-Black.woff2')
+
+@include font('bowler-iskra', normal, 400, '../fonts/BOWLER-Regular.woff2')
+
+@include font('magnum-iskra', normal, 400, '../fonts/Magnum.woff2')
+
+@import 'node_modules/slick-carousel/slick/slick.scss'
+@import 'node_modules/slick-carousel/slick/slick-theme.scss'
