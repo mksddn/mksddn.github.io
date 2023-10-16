@@ -20,68 +20,87 @@
 </head>
 
 <body>
-	<!-- <header class="site-header">
-		<div class="site-header_top">
-			<span class="site-header_top__text">
-				Фонари и многие другие товары оптом
-			</span>
-			<nav class="site-header_top__navmenu">
-				<ul>
-					<li><a href="#0">Прайс-лист</a></li>
-					<li><a href="#0">Контакты</a></li>
-				</ul>
-			</nav>
-		</div>
-		<div class="site-header_middle">
-			<div class="site-logo">
-				<img src="#" alt="#" class="logo-img">
-				<div class="divider_v"></div>
-				<span class="logo-text">Искра</span>
+	<header class="site-header">
+		<div class="site-header_bg">
+			<div class="site-header__top container">
+				<span class="site-header__top__text desktop-only">
+					Фонари и многие другие товары оптом
+				</span>
+				<a href="tel:+7(968)269-24-67" class="site-header__top__text mobile-only"><b>+7(968)269-24-67</b></a>
+				<nav class="site-header__top__navmenu navmenu desktop-only">
+					<ul>
+						<li><a href="#0">Прайс-лист</a></li>
+						<li><a href="#0">Контакты</a></li>
+					</ul>
+				</nav>
 			</div>
-			<form role="search" method="get" class="searchform" action="#">
-				<label class="screen-reader-text">Искать:</label>
-				<input type="search" placeholder="Введите артикул" value="" name="s">
-				<button type="submit" value="Поиск" aria-label="Submit"></button>
-			</form>
+			<div class="site-header__middle container">
+				<a href="/" class="site-logo">
+					<img src="../images/dist/logo.png" alt="#" class="logo-img">
+					<div class="logo-divider"></div>
+					<span class="logo-text">Искра</span>
+				</a>
+				<form role="search" method="get" class="searchform desktop-only" action="#">
+					<label class="sr-only">Искать:</label>
+					<input type="search" placeholder="Введите артикул" value="" name="s">
+					<button type="submit" value="Поиск" aria-label="Submit"></button>
+				</form>
+			</div>
 		</div>
-		<div class="site-header_bottom">
-			<img src="#" alt="#" class="logo-img">
-			<nav>
-				<ul class="site-header_bottom__navmenu">
-					<li class="catalog"><a href="#">Каталог</a>
-						<ul>
-							<li><a href="#">Подпункт №1</a></li>
-							<li><a href="#">Подпункт №2</a></li>
-							<li><a href="#">Подпункт №3</a></li>
-							<li><a href="#">Подпункт №4</a></li>
-							<li><a href="#">Подпункт №5</a></li>
-							<li><a href="#">Подпункт №6</a></li>
-							<li><a href="#">Подпункт №7</a></li>
-							<li><a href="#">Подпункт №8</a></li>
-						</ul>
-					</li>
-					<li><a href="#">Схема работы</a></li>
-					<li><a href="#">Блог и новости</a>
-						<ul>
-							<li><a href="#">Подпункт №1</a></li>
-							<li><a href="#">Подпункт №2</a></li>
-							<li><a href="#">Подпункт №3</a></li>
-						</ul>
-					</li>
-					<li><a href="#">О нас</a></li>
-					<li><a href="#">Контакты</a>
-						<ul>
-							<li><a href="#">Подпункт №1</a></li>
-							<li><a href="#">Подпункт №2</a></li>
-							<li><a href="#">Подпункт №3</a></li>
-						</ul>
-					</li>
-					<li class="accent"><a href="tel:+7(968)269-24-67">+7(968)269-24-67</a></li>
+		<div class="site-header__bottom">
+			<div class="container">
+				<img src="../images/dist/logo.png" alt="#" class="logo-img desktop-only">
+				<label class="navmenu-button" aria-hidden="true">
+					<div class="navmenu-burger">
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+					</div>
+					Меню
+				</label>
+				<nav class="navmenu">
+					<ul class="site-header__bottom__navmenu navmenu-list">
+						<li class="catalog menu-item menu-item-has-children"><a href="#">Каталог</a>
+							<ul class="sub-menu">
+								<li class="menu-item"><a href="#">Подпункт №1</a></li>
+								<li class="menu-item"><a href="#">Подпункт №2</a></li>
+								<li class="menu-item"><a href="#">Подпункт №3</a></li>
+								<li class="menu-item"><a href="#">Подпункт №4</a></li>
+								<li class="menu-item"><a href="#">Подпункт №5</a></li>
+								<li class="menu-item"><a href="#">Подпункт №6</a></li>
+								<li class="menu-item"><a href="#">Подпункт №7</a></li>
+								<li class="menu-item"><a href="#">Подпункт №8</a></li>
+							</ul>
+						</li>
+						<li class="menu-item"><a href="#">Схема работы</a></li>
+						<li class="menu-item menu-item-has-children"><a href="#">Блог и новости</a>
+							<ul class="sub-menu">
+								<li class="menu-item"><a href="#">Подпункт №1</a></li>
+								<li class="menu-item"><a href="#">Подпункт №2</a></li>
+								<li class="menu-item"><a href="#">Подпункт №3</a></li>
+							</ul>
+						</li>
+						<li class="menu-item"><a href="#">О нас</a></li>
+						<li class="menu-item menu-item-has-children"><a href="#">Контакты</a>
+							<ul class="sub-menu">
+								<li class="menu-item"><a href="#">Подпункт №1</a></li>
+								<li class="menu-item"><a href="#">Подпункт №2</a></li>
+								<li class="menu-item"><a href="#">Подпункт №3</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+				<form role="search" method="get" class="searchform mobile-only" action="#">
+					<label class="sr-only">Искать:</label>
+					<input type="search" placeholder="Введите артикул" value="" name="s">
+					<button type="submit" value="Поиск" aria-label="Submit"></button>
+				</form>
+				<ul class="site-header__bottom__woomenu">
+					<li class="desktop-only link-tel"><a href="tel:+7(968)269-24-67">+7(968)269-24-67</a></li>
+					<li><a href="#"><img src="../images/dist/heart.svg" alt="#"></a></li>
+					<li><a href="#"><img src="../images/dist/cart.svg" alt="#"></a></li>
 				</ul>
-				<ul class="site-header_bottom__woomenu">
-					<li><a href="#">W</a></li>
-					<li><a href="#">C</a></li>
-				</ul>
-			</nav>
+			</div>
 		</div>
-	</header> -->
+		<div class="site-header-end"></div>
+	</header>

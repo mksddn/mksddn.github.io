@@ -1,5 +1,9 @@
 .site-footer {
 
+  a {
+    color: inherit;
+  }
+
   &__main {
     background-color: $accent;
     padding: 64px 0;
@@ -15,12 +19,18 @@
     grid-template-rows: auto;
     gap: 64px;
     justify-items: center;
+
+    @media (max-width: 991px) {
+      grid-template-columns: auto;
+    }
   }
 
   &__logo {
     display: flex;
     align-items: center;
     gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
 
     .logo-text {
       font-size: 48px;

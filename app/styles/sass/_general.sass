@@ -2,6 +2,7 @@ $accent: #FF7500 // Accent Color
 $userfont: inter-iskra, sans-serif // User Font Family
 $systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
 $transition: .2s ease-out
+$border-radius: 38px
 
 // GENERAL PROJECT STYLES
 
@@ -69,18 +70,29 @@ section
   &_black
     filter: brightness(0) invert(0)
 
+a.site-logo
+  color: #000
+  &:hover
+    text-decoration: none
+
+.logo-img
+  object-fit: contain
 .logo-text
   font-family: bowler-iskra
+.logo-divider
+  background-color: #000
+  width: 3px
+  height: 56px
 
-.navmenu
-  ul, li
-    padding: 0
-    margin: 0
-    list-style-type: none
-    a
-      color: inherit
-      &:hover
-        text-decoration: none
+// .navmenu
+//   ul, li
+//     padding: 0
+//     margin: 0
+//     list-style-type: none
+//     a
+//       color: inherit
+//       &:hover
+//         text-decoration: none
 
 .slick-prev,
 .slick-next
@@ -89,7 +101,20 @@ section
     color: $accent
     font-size: 2rem
     transition: $transition opacity
-    
+
+.desktop-only,
+.mobile-only
+  display: block
+.desktop-only
+  @media (max-width: 991px)
+    display: none
+.mobile-only
+  @media (min-width: 992px)
+    display: none
+
+.accent
+  color: $accent
+
 // a
 //   position: relative
 //   color: $accent

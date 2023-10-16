@@ -2,10 +2,23 @@
   // height: 35vw;
   // min-height: 578px;
   height: 578px;
-  padding: 64px 140px;
+  padding: 32px 140px 64px 140px;
+  background-color: #000;
   background-image: url('../../../images/dist/main-hero-bg.jpg');
-  background-position: center center;
+  background-position: center 100%;
   background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+
+  @media (max-width: 991px) {
+    padding: 32px 16px;
+    background-size: 140%;
+  }
+
+  @media (max-width: 576px) {
+    padding-bottom: 200px;
+    height: auto;
+  }
 
   &:after {
     content: url('../../../images/dist/main-hero-img.png');
@@ -14,6 +27,16 @@
     top: 0;
     right: 0;
     z-index: 0;
+
+    @media (max-width: 991px) {
+      width: 30%;
+      right: 30%;
+    }
+
+    @media (max-width: 576px) {
+      width: auto;
+      right: -80%;
+    }
   }
 
   &__container {
@@ -24,9 +47,33 @@
     // padding: 16px 140px 64px 140px;
     // padding: 64px 140px;
 
+    @media (max-width: 576px) {
+      gap: 36px;
+    }
+
     * {
       z-index: 1;
       position: relative;
+    }
+  }
+
+  .site-logo {
+    width: 160px;
+    padding: 0 16px;
+    text-align: center;
+
+    .logo-img {
+      width: 160px;
+
+      @media (max-width: 576px) {
+        width: 64px;
+      }
+    }
+
+    .logo-text {
+      display: block;
+      color: #fff;
+      font-size: 36px;
     }
   }
 
@@ -35,18 +82,26 @@
     font-weight: 800;
     text-transform: uppercase;
     color: #fff;
-    line-height: 1.2;
 
-    &:after {
-      content: attr(data-text);
-      position: absolute;
-      left: 0;
-      top: 90%;
-      transform: scaleY(-1);
-      z-index: 1;
-      background: -webkit-linear-gradient(#00000000, #ffffff59);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+    .desktop-only {
+      &:after {
+        content: attr(data-text);
+        position: absolute;
+        left: 0;
+        top: 90%;
+        transform: scaleY(-1);
+        z-index: 1;
+        background: -webkit-linear-gradient(#00000000, #ffffff59);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+
+    .mobile-only {
+      font-size: 36px;
+      @media (max-width: 576px) {
+        font-size: 28px;
+      }
     }
   }
 
