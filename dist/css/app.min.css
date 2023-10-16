@@ -1212,7 +1212,7 @@ a.site-logo:hover {
 .home-footer {
   height: 715px;
   position: relative;
-  background-image: url("../images/dist/ribbon.png");
+  background-image: url("../../../images/dist/ribbon.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -1547,7 +1547,7 @@ input {
             flex-direction: column;
     -webkit-box-align: start;
         -ms-flex-align: start;
-            align-items: start;
+            align-items: flex-start;
   }
   .navmenu .menu-item {
     -ms-flex-wrap: wrap;
@@ -1778,7 +1778,7 @@ input {
   position: relative;
 }
 .site-header .menu-item.catalog:before {
-  content: url("../images/dist/burger.svg");
+  content: url("../../../images/dist/burger.svg");
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1955,6 +1955,7 @@ input {
 }
 .site-header .searchform {
   position: relative;
+  max-width: 50%;
 }
 .site-header .searchform button[type=submit],
 .site-header .searchform input[type=submit] {
@@ -1984,6 +1985,7 @@ input {
 .site-header .searchform input[type=search] {
   padding-left: 50px;
   border: 0.8px solid #fff;
+  max-width: 100%;
 }
 .site-header .searchform input[type=search]::-webkit-input-placeholder {
   color: #C9C9C9;

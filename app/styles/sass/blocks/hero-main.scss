@@ -4,7 +4,7 @@
   height: 578px;
   padding: 32px 140px 64px 140px;
   background-color: #000;
-  background-image: url('../../../images/dist/main-hero-bg.jpg');
+  background-image: url('../images/dist/main-hero-bg.jpg');
   background-position: center 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -21,7 +21,7 @@
   }
 
   &:after {
-    content: url('../../../images/dist/main-hero-img.png');
+    content: url('../images/dist/main-hero-img.png');
     display: block;
     position: absolute;
     top: 0;
