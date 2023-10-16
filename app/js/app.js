@@ -163,13 +163,19 @@ document.addEventListener('DOMContentLoaded', () => {
 			{
 				breakpoint: 1100,
 				settings: {
+					arrows: false,
+					centerMode: true,
+					centerPadding: '50px',
 					slidesToShow: 2,
 					slidesToScroll: 2
 				}
 			},
 			{
-				breakpoint: 648,
+				breakpoint: 628,
 				settings: {
+					arrows: false,
+					centerMode: true,
+					centerPadding: '40px',
 					slidesToShow: 1,
 					slidesToScroll: 1
 				}
@@ -181,24 +187,26 @@ document.addEventListener('DOMContentLoaded', () => {
 		slidesToShow: 3,
 		slidesToScroll: 1,
 		speed: 400,
-		// arrows: false,
+		arrows: false,
 		// prevArrow: '<button class="slide-arrow prev-arrow"></button>',
 		// nextArrow: '<button class="slide-arrow next-arrow"></button>'
 		responsive: [
 			{
 				breakpoint: 1100,
 				settings: {
-					centerMode: true,
-					centerPadding: '100px',
+					// centerMode: true,
+					// centerPadding: '100px',
+					arrows: true,
 					slidesToShow: 2,
 					slidesToScroll: 2
 				}
 			},
 			{
-				breakpoint: 771,
+				breakpoint: 648,
 				settings: {
-					centerMode: true,
-					centerPadding: '60px',
+					// centerMode: true,
+					// centerPadding: '60px',
+					arrows: true,
 					slidesToShow: 1,
 					slidesToScroll: 1
 				}

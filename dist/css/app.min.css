@@ -746,6 +746,10 @@ a.site-logo:hover {
   transition: 0.2s ease-out opacity;
 }
 
+.slick-next {
+  right: -15px;
+}
+
 .desktop-only,
 .mobile-only {
   display: block;
@@ -1097,6 +1101,7 @@ a.site-logo:hover {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+  overflow-x: hidden;
 }
 @media (max-width: 991px) {
   .hero-main {
@@ -1252,6 +1257,11 @@ input {
 .last-posts {
   position: relative;
 }
+@media (max-width: 1100px) {
+  .last-posts {
+    padding: 0 5vw;
+  }
+}
 .last-posts:before {
   content: "";
   background-image: url("../images/dist/ribbon-1.png");
@@ -1291,12 +1301,6 @@ input {
 .last-posts__wrapper {
   max-width: 1100px;
   margin: auto;
-}
-@media (max-width: 1100px) {
-  .last-posts__wrapper {
-    margin-left: -16px;
-    margin-right: -16px;
-  }
 }
 .last-posts__item {
   margin: 0 40px;
@@ -1622,12 +1626,24 @@ input {
   max-width: 1040px;
   margin: auto;
 }
+@media (max-width: 1100px) {
+  .products-carousel__wrapper {
+    margin-left: -16px;
+    margin-right: -16px;
+  }
+}
 .products-carousel__item {
   border: 2px solid #000;
   border-radius: 38px;
   margin: 0 20px;
   text-align: center;
   padding: 30px 36px;
+}
+@media (max-width: 991px) {
+  .products-carousel__item {
+    padding: 20px 10px;
+    margin: 0 10px;
+  }
 }
 .products-carousel__item__wrapper {
   height: 100%;

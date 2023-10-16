@@ -9,6 +9,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+  overflow-x: hidden;
 
   @media (max-width: 991px) {
     padding: 32px 16px;
