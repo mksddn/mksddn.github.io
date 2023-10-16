@@ -1,5 +1,28 @@
 .last-posts {
-  padding-top: 0;
+  // padding-top: 0;
+  position: relative;
+
+  &:before {
+    // content: url('../images/dist/ribbon-1.png');
+    // position: absolute;
+    // top: -25%;
+    // z-index: -1;
+    content: '';
+    background-image: url('../images/dist/ribbon-1.png');
+    background-size: cover;
+    background-position: 50% 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 600px;
+
+    @media (max-width: 991px) {
+      background-position: 90% 50%;
+      height: 300px;
+      top: 150px;
+    }
+  }
 
   &__title {
     font-size: 48px;
