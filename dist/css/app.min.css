@@ -1092,7 +1092,7 @@ a.site-logo:hover {
   height: 578px;
   padding: 32px 140px 64px 140px;
   background-color: #000;
-  background-image: url("../../../images/dist/main-hero-bg.jpg");
+  background-image: url("../images/dist/main-hero-bg.jpg");
   background-position: center 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1111,7 +1111,7 @@ a.site-logo:hover {
   }
 }
 .hero-main:after {
-  content: url("../../../images/dist/main-hero-img.png");
+  content: url("../images/dist/main-hero-img.png");
   display: block;
   position: absolute;
   top: 0;
@@ -1212,7 +1212,7 @@ a.site-logo:hover {
 .home-footer {
   height: 715px;
   position: relative;
-  background-image: url("../../../images/dist/ribbon.png");
+  background-image: url("../images/dist/ribbon.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -1778,7 +1778,7 @@ input {
   position: relative;
 }
 .site-header .menu-item.catalog:before {
-  content: url("../../../images/dist/burger.svg");
+  content: url("../images/dist/burger.svg");
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1943,14 +1943,14 @@ input {
   padding-top: 50px;
 }
 .site-header_bg {
-  background-image: url("../../../images/dist/cat-header-desktop.png");
+  background-image: url("../images/dist/cat-header-desktop.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 100% 0;
 }
 @media (max-width: 991px) {
   .site-header_bg {
-    background-image: url("../../../images/dist/cat-header-mobile.png");
+    background-image: url("../images/dist/cat-header-mobile.png");
   }
 }
 .site-header .searchform {
@@ -1966,7 +1966,7 @@ input {
 }
 .site-header .searchform button[type=submit]:before,
 .site-header .searchform input[type=submit]:before {
-  content: url("../../../images/dist/search-desktop.svg");
+  content: url("../images/dist/search-desktop.svg");
 }
 @media (max-width: 991px) {
   .site-header .searchform button[type=submit],
@@ -1978,7 +1978,7 @@ input {
 @media (max-width: 991px) {
   .site-header .searchform button[type=submit]:before,
   .site-header .searchform input[type=submit]:before {
-    content: url("../../../images/dist/search-mobile.svg");
+    content: url("../images/dist/search-mobile.svg");
   }
 }
 .site-header .searchform input[type=search] {
